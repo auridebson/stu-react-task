@@ -1,3 +1,4 @@
+import Home from "./pages/Home";
 
 
 export default function App() {
@@ -6,6 +7,9 @@ export default function App() {
       <h1>
         Minha página de tarefas
       </h1>
+
+      <Home />
+      
     </div>
   );
 }
