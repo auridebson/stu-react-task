@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Home() {
+export default function About() {
     return (
         <div>
             <h1>
-                Home Page - App Tasks
+                About Page - App Tasks
             </h1>
         </div>
     )

@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function AddEdit() {
+export default function View() {
     return (
         <div>
             <h2>
-                Página de Adição e Edição - App Tasks
+                Página View - App Tasks
             </h2>
         </div>
     )
