@@ -26,6 +26,15 @@ export default function Header() {
                     </p>
                 </Link>
 
+                <Link to="/about">
+                    <p 
+                        className={`${activeTab === "About" ? "active" : "" }`}
+                        onClick={() => setActiveTab=("About")}
+                    >
+                        About
+                    </p>
+                </Link>
+
             </div>
         </div>
     )

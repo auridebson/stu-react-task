@@ -6,6 +6,7 @@ import View from './pages/View';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Header from './components/Header';
 
  
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
 
     <BrowserRouter>
       <div className="App">
+        <Header />
         <ToastContainer position='top-center' />
         <Switch>
           <Router exact path="/" component={Home} />
