@@ -1,3 +1,4 @@
+import AddPage from "./pages/AddPage";
 import Home from "./pages/Home";
 
 
@@ -9,7 +10,9 @@ export default function App() {
       </h1>
 
       <Home />
-      
+
+      <AddPage />
+
     </div>
   );
 }
