@@ -5,9 +5,9 @@ import db from '../../firebase'
 import { toast } from 'react-toastify'
 
 const initialState = {
-    name = "",
-    email = "",
-    contact = ""
+    name : "",
+    email : "",
+    contact : ""
 }
 
 export default function AddEdit() {
