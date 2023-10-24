@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch,  Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home";
 import About from './pages/About';
 import AddEdit from './pages/AddEdit';
@@ -12,7 +12,7 @@ import Header from './components/Header';
 export default function App() {
   return (
 
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <Header />
         <ToastContainer position='top-center' />
@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/about" component={About} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
     
   );
 }
