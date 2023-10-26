@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useHistory } from 'react-router-dom'
 import './index.css'
 
 export default function Header() {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import { useHistory, useParams } from "react-router-dom"
 import './index.css'
-import fireDb from '../../firebase'
+import db from '../../firebase'
 import { toast } from 'react-toastify'
 
 const initialState = {
@@ -15,7 +15,7 @@ export default function AddEdit() {
     const [data, setData] = useState({})
 
     const {name, email, contact} = state
-    const history = useHistory()
+    // const history = useHistory()
 
     const handleSubmit = (e) => {
         const {name, value} = e.target
@@ -26,14 +26,14 @@ export default function AddEdit() {
         if (!name || !email || !contact) {
             toast.error("Preencha todos os campos")
         } else {
-            fireDb.child("contacts").push(state, (err) => {
+            db.child("contacts").push(state, (err) => {
                 if (err) {
                    toast.error(err) 
                 } else {
                 toast.success("Contato adicionado com sucesso")
                 }
             })        
-            setTimeout(() => history.push("/"), 500)
+            // setTimeout(() => history.push("/"), 500)
         }
     }
 
