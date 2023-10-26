@@ -1,5 +1,7 @@
-import firebase from 'firebase'
+// import firebase from "firebase/app"
 import "firebase/database"
+
+import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
     apiKey: "AIzaSyBbB1tyUCjWkh5mLJG91wQZRrbPhSZGxJY",
@@ -12,5 +14,6 @@ const firebaseConfig = {
     measurementId: "G-0887Y5E741"
   };
 
-  const db = firebase.initializeApp(firebaseConfig)
-  export default db.database().ref()
+  const fireDb = initializeApp(firebaseConfig)
+
+  export default fireDb.database().def()

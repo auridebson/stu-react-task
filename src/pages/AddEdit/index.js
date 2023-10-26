@@ -15,6 +15,11 @@ export default function AddEdit() {
     const [data, setData] = useState({})
 
     const {name, email, contact} = state
+
+    const handleSubmit = () => {}
+    const handleInputChange = () => {}
+
+
     return (
         <div>
             <form
@@ -24,7 +29,7 @@ export default function AddEdit() {
                     maxWidth: "400px",
                     alignContent: "center"
                 }}
-                onSubmit={handleInputChange}
+                onSubmit={handleSubmit}
             >
                 <label htmlFor='name'>Name</label>
                 <input 
@@ -52,9 +57,11 @@ export default function AddEdit() {
                     id='contact' 
                     name='contact' 
                     placeholder='Your contact number...' 
-                    value={name} 
+                    value={contact} 
                     onChange={handleInputChange}
                 />
+
+                <input type="submit" value="Save" />
             </form>
         </div>
     )
